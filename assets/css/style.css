@@ -53,6 +53,11 @@ h1, h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position:relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
 }
 
 #hero-image {
@@ -73,4 +78,26 @@ h1, h2 {
     from { transform:scale(1);}
     to {transform: scale(1.1) ;}
 
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    /*rgba used so opacity can be set*/
+    background-color: rgba(241, 109, 107, .7);
+
+    /* bottom, right and absolute fix text box in relation to entire screen. 
+    Parent of cover text overlay and hero image is the hero outer section. 
+    To fix text box relative to hero image, the parent position needs to be set to relative 
+    so the child positions can be set absolute, relative to it. go #hero-outer and 
+    set position to relative. */
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
 }
