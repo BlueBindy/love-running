@@ -111,14 +111,12 @@ h1, h2 {
     padding-top: 30px;
     width: 33%;
     float:left;
-    background-color: blue;
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: silver;
 }
 
 #center-about {
@@ -126,3 +124,37 @@ h1, h2 {
     margin: 0 auto;
     background-color: green;
 }
+/* by giving the hr a border, a line is inserted in relevant div, margin gives some clearance around the rule/line*/
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%
+    margin: 5px;
+}
+/* clear: both ensures that each content block is aligned vertically. Margin-bottom gives breathing space between divs. 
+We'll set its width to 60%. We want our content  to align with the photo in the middle, so we float right. 
+And we want the paragraph text to be  easily read. So we'll set the line-height to 20px.  
+By setting clear: both we ensure that  each content block is aligned vertically.  
+We create some breathing space between the  divs by setting the margin-bottom to 50px.   */ 
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 60px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 60px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+.right-about-heading p {
+    text-align: right;
+}
+
