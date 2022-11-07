@@ -40,37 +40,52 @@
         <div id="cover-text">
             <h2>Love Running</h2>
             <h3>Dublin Docklands & Phoenix Park</h3>
-           
+
         </div>
     </section id="club-ethos">
     <section>
         <h2 id="welcome">Why Love Running with Us?</h2>
         <div id="left-about">
             <div class="left-about-heading">
-            <h2> Feel Healthy</h2>
-            <!-- hr inserts a line -->
-            <hr>
-            <p>Since it improves aerobic fitness, running is a great way to help improve your cardiovascular health. Plus, it burns calories and can build strength.</p>
-        </div>
-        <div class="left-about-heading">
-            <h2> Feel Free</h2>
-            <!--hr inserts a line --> 
-            <hr>
-            <p>Physical exercise, running included, is known to release endorphins in the brain. Endorphins make you more energetic, more awake and, yes, happier.</p>
-        </div>
+                <!-- The following code is commented out - it was copied from Font Awesome but 
+                    it doesn't produce icon. Code from lesson does, so JS code at bottom of body
+                    obviously works. Not clear why my copy doesn't. Stack Overflow says: The fa 
+                    prefix has been deprecated in version 5. The new default is the fas solid 
+                    style  and the fab style for brands. This is why my 
+                    fonts were showing blank squares. Now realised I was toggled to v6 when
+                    selecting code from Fab Icons. 
+           <h2> Feel Healthy <i class="fa-solid fa-heart-pulse"></i></h2>-->
+
+                <h2>Feel Healthy <i class="fas fa-heartbeat"></i></h2>
+                <!-- hr inserts a line -->
+                <hr>
+                <p>Since it improves aerobic fitness, running is a great way to help improve your cardiovascular health.
+                    Plus, it burns calories and can build strength.</p>
+            </div>
+            <div class="left-about-heading">
+                <!--Note that the current version of this icon from Fab Icons v 6 
+                is <i class="fa-brands fa-fly"></i> This prompts a trademark warning -->
+                <h2>Feel Free <i class="fab fa-fly"></i> </h2>
+
+                <!--hr inserts a line -->
+                <hr>
+                <p>Physical exercise, running included, is known to release endorphins in the brain. Endorphins make you
+                    more energetic, more awake and, yes, happier.</p>
+            </div>
         </div>
         <div id="right-about">
-        <div class="right-about-heading">
-            <h2>Get Social</h2>
-            <hr>
-            <p>When we run with others, we can run farther and faster more easily. 
-                Social running can pull you out of a running funk or low mood, inspire you to try new events</p>
-        </div> 
-        <div class="right-about-heading">
-            <h2>Feel Strong</h2>
-            <hr>
-            <p>Running strengthens your heart by pumping blood more effectively through your body.</p>
-        </div>   
+            <div class="right-about-heading">
+                
+                <h2>Get Social <i class="fas fa-globe"></i></h2>
+                <hr>
+                <p>When we run with others, we can run farther and faster more easily.
+                    Social running can pull you out of a running funk or low mood, inspire you to try new events</p>
+            </div>
+            <div class="right-about-heading">
+                <h2>Feel Strong <i class="fas fa-dumbbell"></i></h2>
+                <hr>
+                <p>Running strengthens your heart by pumping blood more effectively through your body.</p>
+            </div>
         </div>
         <div id="center-about">
             <div id="circle-container">
@@ -80,6 +95,11 @@
     </section>
     <section>Running locations, distance, time</section>
     <footer>social links here</footer>
+
+    <!--JS code for icons used in ethos section. Because it is JS it goes on html page not CSS. 
+    Place at bottom because loading it in browser can slow page down, but putting it at bottom
+means it loads last and doesn't hold up other elements-->
+    <script src="https://kit.fontawesome.com/1e818b8a7e.js" crossorigin="anonymous"></script>
 
 </body>
 
