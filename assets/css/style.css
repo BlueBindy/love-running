@@ -260,3 +260,50 @@ footer {
 #photos img {
     width: 100%;
 }
+
+/* media queries*/
+/* content that views correctly on full width wide screens distorts at 1200px - tablet size-, so setting max-wdith here 
+prevents content doing that when viewed on a smaller screen.*/
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/*this next media query section ensures design is responsive for smart phones.*/
+
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
